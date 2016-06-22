@@ -5,15 +5,41 @@
 	<title>Como funciona a internet?</title>
 </head>
 <body>
-	<div class="slide-01">
-	<h1>Como funciona a internet?</h1>
-	<p><em>Tutorial Django Girls, adaptado por Renata (@rsip22) e Liliane (@liliane_lewis)</em></p>
-	<img src="img/logo-transparent-negative.png" width="200px" ="" alt="logo Django Girls">
+	<div class="slide">
+		<h1>Como funciona a internet?</h1>
+		<p><em>Tutorial Django Girls, adaptado por Renata (@rsip22) e Liliane (@liliane_lewis)<br>
+		Original disponível em: <a href="http://tutorial.djangogirls.org/pt/how_the_internet_works/">http://tutorial.djangogirls.org/pt/how_the_internet_works/</a></em></p>
+		<img src="img/logo-transparent-negative.png" width="200px" ="" alt="logo Django Girls">
+	</div>
 
-	<div class="slide-02">
-	<h2>Caminho da internet</h2>
-	<p>Você sabe realmente o que acontece quando você digita um endereço como https://djangogirls.org em seu navegador e pressiona 'Enter'?</p>
-	<img src="img/how_internet-1200px.png" alt="Como a internet funciona: uma rede de requisições">
+	<div class="slide">
+		<h2>O que é a internet?</h2>
+		<p>A internet é uma rede de máquinas conectadas. São centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos em todo o mundo! O cabo do seu computador, o cabo do seu escritório, o cabo da sua empresa, todos ligados uns aos outros mesmo que indiretamente - e, por sua vez, ligados a outros e outros cabos que se conectam como uma teia (por isso o nome "web", teia, em inglês). Veja!</p>
+		<img src="img/internet-1200.png" alt="um emaranhado de conexões que simula a estrutura da internet">
+	</div>
+	<div class="slide">
+		<p>Cada pontinho desses é um computador ou um celular ou um dispositivo qualquer com capacidade de conexão. </p>
+	</div>
+
+	<div class="slide">
+		<h2>Caminho da internet</h2>
+		<p>Mas você sabe como tudo funciona? Sabe o que acontece quando você digita um endereço como https://djangogirls.org em seu navegador e pressiona 'Enter'?</p>
+		<p>Imagine que quando você digita um endereço, você envia uma carta que diz:</p>
+		<img src="img/dns-01-1200.png" alt="uma carta que diz: 'Querido Django Girls, eu desejo ver o site djangogirls.org. Envie ele pra mim, por favor!'">
+	</div>
+
+	<div class="slide">
+		A partir disso, o seu computador vai se comunicar com os outros, perguntando se algum deles sabe em qual computador (que chamamos de servidor) está armazenado o site djangogirls.org. Esse computador pergunta ao próximo e ao próximo até encontrar uma resposta que vai direcionar ao endereço correto. 
+		<img src="img/how_internet-1200.png" alt="Como a internet funciona: uma rede de requisições">
+	</div>
+
+	<div class="slide">
+		<p>Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, nós usamos endereços IP (IP - Protocolo de Internet). Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para o endereço IP do servidor do site djangogirls.org.</p>
+	</div>
+
+	<div class="slide">
+		<p>Como já dissemos, um servidor nada mais é do que um computador. Ele tem esse nome porque armazena arquivos que serão servidos por uma rede (nesse caso, a internet). Para que esses arquivos (ou o site) possam estar sempre disponíveis, o servidor precisa estar sempre ligado e conectado 24 horas por dia.</p>
+	</div>
 
 </body>
 </html>
