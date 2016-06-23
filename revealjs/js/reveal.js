@@ -77,7 +77,7 @@
 			touch: true,
 
 			// Loop the presentation
-			loop: true,
+			loop: false,
 
 			// Change the presentation direction to be RTL
 			rtl: false,
