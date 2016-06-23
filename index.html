@@ -3,54 +3,68 @@
 <meta charset="utf-8">
 <head>
 	<title>Como funciona a internet?</title>
+
+    <!-- Reveal.js slides stylesheet -->
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/black.css">
+
 </head>
 <body>
-	<div class="slide">
-		<h1>Como funciona a internet?</h1>
-		<p><em>Tutorial Django Girls, adaptado por Renata (@rsip22) e Liliane (@liliane_lewis)<br>
-		Original disponível em: <a href="http://tutorial.djangogirls.org/pt/how_the_internet_works/">http://tutorial.djangogirls.org/pt/how_the_internet_works/</a></em></p>
-		<img src="img/logo-transparent-negative.png" width="200px" ="" alt="logo Django Girls">
-	</div>
+	<div class="reveal">
+		<div class="slides">
 
-	<div class="slide">
-		<h2>O que é a internet?</h2>
-		<p>A internet é uma rede de máquinas conectadas. São centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos em todo o mundo! O cabo do seu computador, o cabo do seu escritório, o cabo da sua empresa, todos ligados uns aos outros mesmo que indiretamente - e, por sua vez, ligados a outros e outros cabos que se conectam como uma teia (por isso o nome "web", teia, em inglês). Veja!</p>
-		<img src="img/internet-1200.png" alt="um emaranhado de conexões que simula a estrutura da internet">
-	</div>
-	<div class="slide">
-		<p>Cada pontinho desses é um computador ou um celular ou um dispositivo qualquer com capacidade de conexão. </p>
-	</div>
+			<section>
+				<h1>Como funciona a internet?</h1>
+				<p><em>Tutorial Django Girls, adaptado por Renata (@rsip22) e Liliane (@liliane_lewis)<br>
+				Original disponível em: <a href="http://tutorial.djangogirls.org/pt/how_the_internet_works/">http://tutorial.djangogirls.org/pt/how_the_internet_works/</a></em></p>
+				<img src="img/logo-transparent-negative.png" width="200px" ="" alt="logo Django Girls">
+			</section>
 
-	<div class="slide">
-		<h2>Caminho da internet</h2>
-		<p>Mas você sabe como tudo funciona? Sabe o que acontece quando você digita um endereço como https://djangogirls.org em seu navegador e pressiona 'Enter'?</p>
-		<p>Imagine que quando você digita um endereço, você envia uma carta, que chamaremos de pacotes de dados, que diz:</p>
-		<img src="img/dns-01-1200.png" alt="uma carta que diz: 'Querido Django Girls, eu desejo ver o site djangogirls.org. Envie ele pra mim, por favor!'">
-	</div>
+			<section>
+				<h2>O que é a internet?</h2>
+				<p>A internet é uma rede de máquinas conectadas. São centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos em todo o mundo! O cabo do seu computador, o cabo do seu escritório, o cabo da sua empresa, todos ligados uns aos outros mesmo que indiretamente - e, por sua vez, ligados a outros e outros cabos que se conectam como uma teia (por isso o nome "web", teia, em inglês). Veja!</p>
+				<img src="img/internet-1200.png" alt="um emaranhado de conexões que simula a estrutura da internet">
+				<p>Cada pontinho desses é um computador ou um celular ou um dispositivo qualquer com capacidade de conexão. </p>
+			</section>
 
-	<div class="slide">
-		A partir disso, o seu computador vai se comunicar com os outros, perguntando se algum deles sabe em qual computador (que chamamos de servidor) está armazenado o site djangogirls.org. Esse computador pergunta ao próximo e ao próximo até encontrar uma resposta que vai direcionar ao endereço correto. 
-		<img src="img/how_internet-1200.png" alt="Como a internet funciona: uma rede de requisições">
-	</div>
+			<section>
+				<h2>Caminho da internet</h2>
+				<p>Mas você sabe como tudo funciona? Sabe o que acontece quando você digita um endereço como https://djangogirls.org em seu navegador e pressiona 'Enter'?</p>
+				<p>Imagine que quando você digita um endereço, você envia uma carta, que chamaremos de pacotes de dados, que diz:</p>
+				<img src="img/dns-01-1200.png" alt="uma carta que diz: 'Querido Django Girls, eu desejo ver o site djangogirls.org. Envie ele pra mim, por favor!'">
+			</section>
 
-	<div class="slide">
-		<p>Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, nós usamos endereços IP (IP - Protocolo de Internet). Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para o endereço IP do servidor do site djangogirls.org.</p>
-	</div>
+			<section>
+				A partir disso, o seu computador vai se comunicar com os outros, perguntando se algum deles sabe em qual computador (que chamamos de servidor) está armazenado o site djangogirls.org. Esse computador pergunta ao próximo e ao próximo até encontrar uma resposta que vai direcionar ao endereço correto. 
+				<img src="img/how_internet-1200.png" alt="Como a internet funciona: uma rede de requisições">
+			</section>
 
-	<div class="slide">
-		<p>Quando você envia uma carta, ela precisa ter certas características para ser entregue corretamente: um endereço, selo, etc. Você também usa uma linguagem que o receptador compreende, certo? O mesmo acontece com pacotes de dados que você envia para ver um site: você usa um protocolo chamado HTTP (Hypertext Transfer Protocol - Protocolo de Transferência de Hipertexto) - ou HTTPS, a versão criptografada e mais segura do HTTP.
-		</p>
-	</div>
+			<section>
+				<p>Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, nós usamos endereços IP (IP - Protocolo de Internet). Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para o endereço IP do servidor do site djangogirls.org.</p>
+			</section>
 
-	<div class="slide">
-		<p>Então, basicamente, quando você tem um site você precisa ter um servidor (máquina) onde ele os arquivos do site ficarão hospedados. O servidor precisa ficar ligado e conectado o máximo de tempo possível, à espera de quaisquer requisições recebidas (cartas que solicitam ao servidor o envio do seu site), para enviar de volta os arquivos que compõem seu site (em outras cartas).</p>
-	</div>
+			<section>
+				<p>Quando você envia uma carta, ela precisa ter certas características para ser entregue corretamente: um endereço, selo, etc. Você também usa uma linguagem que o receptador compreende, certo? O mesmo acontece com pacotes de dados que você envia para ver um site: você usa um protocolo chamado HTTP (Hypertext Transfer Protocol - Protocolo de Transferência de Hipertexto) - ou HTTPS, a versão criptografada e mais segura do HTTP.</p>
+			</section>
 
-	<div class="slide">
-		<p>Como este é um tutorial de Django você vai perguntar o que o Django faz. Quando envia uma resposta nem sempre você quer enviar a mesma coisa para todo mundo. É muito melhor se suas cartas são personalizadas, especialmente para a pessoa que acabou de escrever para você, certo? O Django ajuda você a criar essas personalizadas e interessantes cartas :). Então...</p>
-		<a href="http://tutorial.djangogirls.org/pt/how_the_internet_works/" title="tutorial DjangoGirls"><img src="img/pyladies-head.png" alt="desenho face PyLadies, com óculos e cabelo vermelho"></a>
-		<h2>Vamos lá, meninas!</h2>
-	</div>
+			<section>
+				<p>Então, basicamente, quando você tem um site você precisa ter um servidor (máquina) onde ele os arquivos do site ficarão hospedados. O servidor precisa ficar ligado e conectado o máximo de tempo possível, à espera de quaisquer requisições recebidas (cartas que solicitam ao servidor o envio do seu site), para enviar de volta os arquivos que compõem seu site (em outras cartas).</p>
+			</section>
+
+			<section>
+				<p>Como este é um tutorial de Django você vai perguntar o que o Django faz. Quando envia uma resposta nem sempre você quer enviar a mesma coisa para todo mundo. É muito melhor se suas cartas são personalizadas, especialmente para a pessoa que acabou de escrever para você, certo? O Django ajuda você a criar essas personalizadas e interessantes cartas :). Então...</p>
+				<a href="http://tutorial.djangogirls.org/pt/how_the_internet_works/" title="tutorial DjangoGirls"><img src="img/pyladies-head.png" alt="desenho face PyLadies, com óculos e cabelo vermelho"></a>
+				<h2>Vamos lá, meninas!</h2>
+			</section>
+
+		</div> <!-- /slides -->
+	</div> <!-- /reveal -->
+	
+	<!-- Reveal.js slides functionality -->
+    <script src="reveal.js/js/reveal.js"></script>
+    <script>
+    	Reveal.initialize();
+    </script>
 
 </body>
 </html>
